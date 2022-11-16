@@ -1,6 +1,6 @@
 # Weather App
 
-Weather app which smoothly integrates with the OpenWeather API to fetch and display current, and 8-day forecasted weather data from around the globe based on search of specific location, Fahrenheit and Celsius temperature units, local time and date, in addition to dynamic icons and images.
+Weather app which smoothly integrates with the OpenWeather API and Netlify serverless functions to fetch and display current, and 8-day forecasted weather data from around the globe based on search of specific location, Fahrenheit and Celsius temperature units, local time and date, in addition to dynamic icons and images.
 
 Built with:
 
