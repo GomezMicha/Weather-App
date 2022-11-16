@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "netlify-cli": "^12.1.0"
+  },
+  "name": "weather_app",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "netlify": "./node_modules/.bin/netlify",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "node-fetch": "^2.6.7"
+  }
+}

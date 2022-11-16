@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="shortcut icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created with HTML5, Sass, and JavaScript. Check the current and 8-day weather forecast for more than 200.000 cities around the globe."
+      data-react-helmet="true"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./js/weather-icons.js" defer></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <main id="main">
+        <div class="refresh-wrapper" title="Refresh Page">
+          <i class="bi bi-arrow-clockwise"></i>
+        </div>
+        <div class="location-name">Location</div>
+        <div class="units-cont">
+          <button id="fahrenheit" title="Fahrenheit">°F</button>
+          <button id="celsius" title="Celsius" disabled>°C</button>
+        </div>
+        <div class="degrees" id="degrees"></div>
+        <div class="current-date" id="current-date">Current Date</div>
+        <div class="icon">
+          <i class="bi"></i>
+        </div>
+      </main>
+      <section id="right-section">
+        <div class="search-city">
+          <input
+            id="search-city"
+            type="search"
+            onfocus="this.value=''"
+            required
+          />
+          <label for="">Search Location</label>
+          <ul class="city-dropdown"></ul>
+          <div class="seacrh-icon-cont">
+            <i class="bi bi-search"></i>
+          </div>
+        </div>
+
+        <div class="current-time" id="current-time"></div>
+        <div class="info-cont">
+          <div class="info" id="feels-like">Feels like<span></span></div>
+          <div class="info" id="humidity">Humidity<span></span></div>
+          <div class="info" id="visibility">Visibility<span></span></div>
+          <div class="info" id="pressure">Pressure<span></span></div>
+          <div class="info" id="wind">Wind<span></span></div>
+        </div>
+      </section>
+      <section id="bottom-section">
+        <button class="previous">
+          <i class="bi bi-chevron-compact-left"></i>
+        </button>
+        <div id="daily-info-wrapper" class="custom-scroll">
+          <div class="daily-info expand"></div>
+          <div class="daily-info"></div>
+          <div class="daily-info"></div>
+          <div class="daily-info"></div>
+          <div class="daily-info"></div>
+          <div class="daily-info"></div>
+          <div class="daily-info"></div>
+          <div class="daily-info"></div>
+        </div>
+        <button class="next">
+          <i class="bi bi-chevron-compact-right"></i>
+        </button>
+      </section>
+    </div>
+  </body>
+</html>
